@@ -2,6 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.11.3",
+    "node": "12.10.0",
+    "yarn": "1.19.1"
+  },
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
