@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Maison = () => {
-    return <p>Bonjour Monde !</p>
+    return <div>
+        <p>Bonjour monde</p>
+    </div>
 }
 
 export default Maison
