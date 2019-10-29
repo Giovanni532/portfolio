@@ -6,36 +6,48 @@ const Language = () => {
             id: 1,
             name: "JavaScript",
             pourcentage: 85,
-            icone: ""
+            icone: "fab fa-js-square"
         },
         {
             id: 2,
             name: "Ruby",
             pourcentage: 80,
-            icone: ""
+            icone: "fas fa-gem"
         },
         {
             id: 3,
             name: "HTML",
             pourcentage: 90,
-            icone: ""
+            icone: "fab fa-html5"
         },
         {
             id: 4,
             name: "CSS",
             pourcentage: 90,
-            icone: ""
+            icone: "fab fa-css3-alt"
+        },
+        {
+            id: 5,
+            name: "SCSS",
+            pourcentage: 90,
+            icone: "fab fa-sass"
         }
     ]
 
+    const iconeToDesgin = (icone, name) => {
+        if (name.toLowerCase() === "javascript"){
+            return "javascript"
+        }
+        return icone + " " + name.toLowerCase()
+    }
+
     return (
-        <div>
-            {language.map(language =>
-                <div key={language.id} className="progress">
-                    <div className="progress-bar" role="progressbar" style={{ width: language.pourcentage + "%" }} aria-valuenow={language.pourcentage} aria-valuemin="0" aria-valuemax="100">{language.name}</div>
-                </div>
-            )}
-        </div>
+        language.map(language =>
+            <div key={language.id} className="card-competences">
+                <i className={iconeToDesgin(language.icone, language.name)} id="language"></i>
+                <h2 className="name-competences">{language.name}</h2>
+            </div>
+        )
     )
 }
 

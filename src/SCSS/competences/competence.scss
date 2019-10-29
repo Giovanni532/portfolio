@@ -1,0 +1,104 @@
+.competence {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title-competence-framework {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    margin: 0 140px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.title-competence-data {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    margin: 0 180px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.title-competence-language {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    margin: 0 150px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.competences {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-competences {
+    margin: 20px 40px;
+    padding: 10px 5px 5px 5px;
+    box-shadow: 0 0px 20px -2px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.name-competences {
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+#data {
+    padding-right: 7px;
+    margin-top: -5px;
+}
+
+#framework {
+    padding-right: 7px;
+    margin-top: -5px;
+}
+
+#language {
+    padding-right: 7px;
+    margin-top: -5px;
+}
+
+.javascript {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjZmZkNjAwIiBkPSJNNiw0MlY2aDM2djM2SDZ6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzAwMDAwMSIgZD0iTTI5LjUzOCAzMi45NDdjLjY5MiAxLjEyNCAxLjQ0NCAyLjIwMSAzLjAzNyAyLjIwMSAxLjMzOCAwIDIuMDQtLjY2NSAyLjA0LTEuNTg1IDAtMS4xMDEtLjcyNi0xLjQ5Mi0yLjE5OC0yLjEzM2wtLjgwNy0uMzQ0Yy0yLjMyOS0uOTg4LTMuODc4LTIuMjI2LTMuODc4LTQuODQxIDAtMi40MSAxLjg0NS00LjI0NCA0LjcyOC00LjI0NCAyLjA1MyAwIDMuNTI4LjcxMSA0LjU5MiAyLjU3M2wtMi41MTQgMS42MDdjLS41NTMtLjk4OC0xLjE1MS0xLjM3Ny0yLjA3OC0xLjM3Ny0uOTQ2IDAtMS41NDUuNTk3LTEuNTQ1IDEuMzc3IDAgLjk2NC42IDEuMzU0IDEuOTg1IDEuOTUxbC44MDcuMzQ0QzM2LjQ1MiAyOS42NDUgMzggMzAuODM5IDM4IDMzLjUyMyAzOCAzNi40MTUgMzUuNzE2IDM4IDMyLjY1IDM4Yy0yLjk5OSAwLTQuNzAyLTEuNTA1LTUuNjUtMy4zNjhMMjkuNTM4IDMyLjk0N3pNMTcuOTUyIDMzLjAyOWMuNTA2LjkwNiAxLjI3NSAxLjYwMyAyLjM4MSAxLjYwMyAxLjA1OCAwIDEuNjY3LS40MTggMS42NjctMi4wNDNWMjJoMy4zMzN2MTEuMTAxYzAgMy4zNjctMS45NTMgNC44OTktNC44MDUgNC44OTktMi41NzcgMC00LjQzNy0xLjc0Ni01LjE5NS0zLjM2OEwxNy45NTIgMzMuMDI5eiI+PC9wYXRoPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+.ruby {
+    font-size: 22px;
+    color: red;
+    transform: rotate(-45deg);
+}
+
+.html {
+    font-size: 24px;
+    color: orange;
+}
+
+.css {
+    font-size: 24px;
+    color: blue;
+}
+
+.react {
+    font-size: 26px;
+    color: aqua;
+}
+
+.react-native {
+    font-size: 26px;
+    color: aqua;
+}
+
+.scss {
+    font-size: 26px;
+    color: #F783AC;
+}

@@ -17,24 +17,33 @@ const Competences = () => {
         setCertificat(true)
     }
 
-    return (<div>
+    return (
         <div>
-            <p onClick={() => handlingCompetence()}>Competences</p>
-            <p onClick={() => handlingCertificat()}>Certificat</p>
-        </div>
-        {competence === true ?
             <div>
-                <Data />
-                <FrameWork/>
-                <Language/>
+                <p onClick={() => handlingCompetence()}>Competences</p>
+                <p onClick={() => handlingCertificat()}>Certificat</p>
             </div>
-            :
-            certificat === true ?
-                <p>Certificat</p>
+            {competence === true || certificat === false ?
+                <div className="competence">
+                    <div className="competences">
+                        <div>
+                            <h2 className="title-competence-data">Data</h2>
+                            <Data />
+                        </div>
+                        <div>
+                            <h2 className="title-competence-framework">Framework</h2>
+                            <FrameWork />
+                        </div>
+                        <div>
+                            <h2 className="title-competence-language">Language</h2>
+                            <Language />
+                        </div>
+                    </div>
+                </div>
                 :
-                <p>Competences</p>
-        }
-    </div>
+                <p>Certificat</p>
+            }
+        </div>
     )
 }
 
