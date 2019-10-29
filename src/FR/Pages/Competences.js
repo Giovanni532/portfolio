@@ -26,15 +26,15 @@ const Competences = () => {
             {competence === true || certificat === false ?
                 <div className="competence">
                     <div className="competences">
-                        <div>
+                        <div style={{textAlign: "center"}}>
                             <h2 className="title-competence-data">Data</h2>
                             <Data />
                         </div>
-                        <div>
+                        <div style={{textAlign: "center"}}>
                             <h2 className="title-competence-framework">Framework</h2>
                             <FrameWork />
                         </div>
-                        <div>
+                        <div style={{textAlign: "center"}}>
                             <h2 className="title-competence-language">Language</h2>
                             <Language />
                         </div>
