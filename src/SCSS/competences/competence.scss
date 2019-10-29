@@ -1,3 +1,23 @@
+.menu-competences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.link-menu-competences {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    border-radius: 3px;
+    padding: 10px;
+}
+
 .competence {
     text-align: center;
     margin: 0 auto;
