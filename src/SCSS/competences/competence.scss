@@ -9,6 +9,17 @@
     text-align: center;
     margin: 20px;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 .active {
@@ -172,6 +183,7 @@
     .card-competences {
         margin: 20px 60px;
     }
+
     .title-competence-data {
         margin: 0 200px;
     }
@@ -191,6 +203,7 @@
     .card-competences {
         margin: 20px 40px;
     }
+
     .title-competence-data {
         margin: 0 180px;
     }
