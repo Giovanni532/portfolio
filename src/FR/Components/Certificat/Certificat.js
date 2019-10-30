@@ -26,7 +26,7 @@ const Certificat = () => {
         name: "Développez une application mobile React Native",
         className: "title-certificat-react-native",
         img: imageOP,
-        skills: "React-Native, React-Navigations, API et le développement mobile"
+        skills: "React-Native, React-Navigations, DATA Binding, API et le développement mobile"
     },
     {
         id: 4,
@@ -34,9 +34,27 @@ const Certificat = () => {
         name: "Le Wagon Fullstack Challenge",
         className: "title-certificat-wagon",
         img: imageWagon,
-        skills: "Ruby, Ruby on Rails, JavaScript ES6, PostgreSQL, CSS3, SASS, HTML5"
+        skills: "Ruby, Ruby on Rails, JavaScript ES6, PostgreSQL, CSS3, SASS et l'HTML5"
+    },
+    {
+        id: 5,
+        title: "Le Wagon coding bootcamp",
+        name: "Le Wagon React/Redux TRACK",
+        className: "title-certificat-track",
+        img: imageWagon,
+        skills: "React, React-Router, Redux et Jest"
+    },
+    {
+        id: 6,
+        title: "OpenClassRoom",
+        name: "Realisez une application web avec ReactJS",
+        className: "title-certificat-react",
+        img: imageOP,
+        skills: "React, JSX, PropTypes, Jest et Enzyme"
     }
-]
+    ]
+
+    const lengthCertificat = certificatArray.length
 
     return (
         <Container>
@@ -49,11 +67,15 @@ const Certificat = () => {
                             <div class="card-certificat">
                                 <img src={certificat.img} alt={certificat.name} />
                                 <div class="card-certificat-infos">
-                                    <h2 style={{textAlign: 'left'}}>{certificat.title}</h2>
-                                    <p style={{textAlign: 'left'}}>Compétences acquises : {certificat.skills}</p>
+                                    <h2 style={{ textAlign: 'left' }}>{certificat.title}</h2>
+                                    <p style={{ textAlign: 'left' }}>Compétences acquises : {certificat.skills}</p>
                                 </div>
                             </div>
-                            <div className="space-point"></div>
+                            {lengthCertificat === certificat.id ?
+                                <div style={{height: 50}}></div>
+                                :
+                                <div className="space-point"></div>
+                            }
                         </div>
                     )}
                 </Col>
