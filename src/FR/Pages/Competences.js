@@ -3,6 +3,7 @@ import Data from '../Components/Competence/Data'
 import FrameWork from '../Components/Competence/FrameWork'
 import Language from '../Components/Competence/Language'
 import Cli from '../Components/Competence/Cli'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const Competences = () => {
     const [competence, setCompetence] = React.useState(true)
@@ -25,26 +26,26 @@ const Competences = () => {
                 <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active" : "link-menu-competences"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
+                <Container>
+                    <Row>
+                        <Col>
                             <h2 className="title-competence-data">Data</h2>
                             <Data />
-                        </div>
-                        <div className="col">
+                        </Col>
+                        <Col>
                             <h2 className="title-competence-framework">Framework</h2>
                             <FrameWork />
-                        </div>
-                        <div className="col">
+                        </Col>
+                        <Col>
                             <h2 className="title-competence-language">Language</h2>
                             <Language />
-                        </div>
-                        <div className="col">
+                        </Col>
+                        <Col>
                             <h2 className="title-competence-cli">Cli</h2>
                             <Cli />
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
                 :
                 <p>Certificat</p>
             }
