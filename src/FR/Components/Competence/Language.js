@@ -37,6 +37,8 @@ const Language = () => {
     const iconeToDesgin = (icone, name) => {
         if (name.toLowerCase() === "javascript"){
             return "javascript"
+        } else if (name.toLowerCase() === 'ruby') {
+            return 'ruby'
         }
         return icone + " " + name.toLowerCase()
     }

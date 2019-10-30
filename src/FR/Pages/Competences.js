@@ -2,6 +2,7 @@ import React from 'react'
 import Data from '../Components/Competence/Data'
 import FrameWork from '../Components/Competence/FrameWork'
 import Language from '../Components/Competence/Language'
+import Cli from '../Components/Competence/Cli'
 
 const Competences = () => {
     const [competence, setCompetence] = React.useState(true)
@@ -24,19 +25,23 @@ const Competences = () => {
                 <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active" : "link-menu-competences"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
-                <div className="competence">
-                    <div className="competences">
-                        <div style={{textAlign: "center"}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
                             <h2 className="title-competence-data">Data</h2>
                             <Data />
                         </div>
-                        <div style={{textAlign: "center"}}>
+                        <div className="col">
                             <h2 className="title-competence-framework">Framework</h2>
                             <FrameWork />
                         </div>
-                        <div style={{textAlign: "center"}}>
+                        <div className="col">
                             <h2 className="title-competence-language">Language</h2>
                             <Language />
+                        </div>
+                        <div className="col">
+                            <h2 className="title-competence-language">Cli</h2>
+                            <Cli />
                         </div>
                     </div>
                 </div>

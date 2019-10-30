@@ -22,17 +22,17 @@ const FrameWork = () => {
         }
     ]
 
-    const nameForDesign = name => {
-        if (name.toLowerCase() === "ruby on rails") {
-            return "ruby"
+    const iconeToDesgin = (icone, name) => {
+        if (name.toLowerCase() === 'ruby on rails') {
+            return 'ruby'
         }
-        return name.toLowerCase()
+        return icone + " " + name.toLowerCase()
     }
 
     return (
         frameWork.map(frameWork =>
             <div key={frameWork.id} className="card-competences">
-                <i className={frameWork.icone + " " + nameForDesign(frameWork.name)} id="framework"></i>
+                <i className={iconeToDesgin(frameWork.icone, frameWork.name)} id="framework"></i>
                 <h2 className="name-competences">{frameWork.name}</h2>
             </div>
         )

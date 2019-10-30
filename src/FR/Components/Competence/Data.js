@@ -28,10 +28,17 @@ const Data = () => {
         }
     ]
 
+    const iconeToDesgin = (name) => {
+        if (name.toLowerCase() === 'sql') {
+            return 'fas fa-database'
+        }
+        return name.toLowerCase()
+    }
+
     return (
         data.map(data =>
             <div key={data.id} className="card-competences">
-                <i className={data.icone} id="data"></i>
+                <i className={iconeToDesgin(data.name)} id="data"></i>
                 <h2 className="name-competences">{data.name}</h2>
             </div>
         )
