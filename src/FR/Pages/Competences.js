@@ -4,6 +4,7 @@ import FrameWork from '../Components/Competence/FrameWork'
 import Language from '../Components/Competence/Language'
 import Cli from '../Components/Competence/Cli'
 import { Container, Row, Col } from 'react-bootstrap'
+import Certificat from '../Components/Certificat/Certificat'
 
 const Competences = () => {
     const [competence, setCompetence] = React.useState(true)
@@ -22,8 +23,8 @@ const Competences = () => {
     return (
         <div>
             <div className="menu-competences">
-                <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active" : "link-menu-competences"}>Competences</p>
-                <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active" : "link-menu-competences"}>Certificat</p>
+                <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active-link" : "link-menu-competences"}>Competences</p>
+                <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link" : "link-menu-competences"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
                 <Container>
@@ -47,7 +48,7 @@ const Competences = () => {
                     </Row>
                 </Container>
                 :
-                <p>Certificat</p>
+                <Certificat />
             }
         </div>
     )
