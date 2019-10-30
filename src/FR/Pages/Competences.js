@@ -23,8 +23,8 @@ const Competences = () => {
     return (
         <div>
             <div className="menu-competences">
-                <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active-link" : "link-menu-competences"}>Competences</p>
-                <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link" : "link-menu-competences"}>Certificat</p>
+                <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Competences</p>
+                <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
                 <Container>

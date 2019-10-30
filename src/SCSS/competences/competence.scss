@@ -9,17 +9,6 @@
     text-align: center;
     margin: 20px;
     cursor: pointer;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
 }
 
 .active-link {
@@ -197,6 +186,7 @@
     .card-competences {
         margin: 20px 120px;
     }
+
     .title-competence-data {
         margin: 0 200px;
     }
@@ -208,6 +198,7 @@
     .title-competence-language {
         margin: 0 150px;
     }
+
     .title-competence-cli {
         margin: 0 200px;
     }

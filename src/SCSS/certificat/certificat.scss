@@ -66,38 +66,111 @@
     overflow: hidden;
     height: 120px;
     background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     transition: .5s;
-  }
-  
-  .card-certificat img {
+}
+
+.card-certificat img {
     height: 100%;
     width: 120px;
     object-fit: cover;
-  }
-  
-  .card-certificat h2 {
+}
+
+.card-certificat h2 {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
-  }
-  
-  .card-certificat p {
+}
+
+.card-certificat p {
     font-size: 12px;
     line-height: 1.4;
     opacity: .7;
     margin-bottom: 0;
     margin-top: 8px;
-  }
-  
-  .card-certificat .card-certificat-infos {
+}
+
+.card-certificat .card-certificat-infos {
     padding: 16px;
-  }
-  
-  .space-point {
+}
+
+.space-point {
     height: 70px;
     width: 50%;
     border-right: 4px dotted rgb(174, 232, 255);
-  }
+}
+
+@media (max-width: 960px) {
+
+    /* For a screen < 960px, this CSS will be read */
+
+    .card-competences {
+        margin: 20px 120px;
+    }
+
+    .title-competence-data {
+        margin: 0 200px;
+    }
+
+    .title-competence-framework {
+        margin: 0 150px;
+    }
+
+    .title-competence-language {
+        margin: 0 150px;
+    }
+
+    .title-competence-cli {
+        margin: 0 200px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    /* For a screen < 720px, this CSS will be read */
+    .card-competences {
+        margin: 20px 60px;
+    }
+
+    .title-competence-data {
+        margin: 0 200px;
+    }
+
+    .title-competence-framework {
+        margin: 0 150px;
+    }
+
+    .title-competence-language {
+        margin: 0 150px;
+    }
+
+    .title-competence-cli {
+        margin: 0 200px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    /* For a screen < 540px, this CSS will be read */
+    .card-competences {
+        margin: 20px 50px;
+    }
+
+    .title-competence-data {
+        margin: 0 140px;
+    }
+
+    .title-competence-framework {
+        margin: 0 100px;
+    }
+
+    .title-competence-language {
+        margin: 0 110px;
+    }
+
+    .title-competence-cli {
+        margin: 0 140px;
+    }
+}
