@@ -10,3 +10,51 @@
     text-align: center;
     padding: 5px;
 }
+
+.title-certificat-js {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    margin: 0 240px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-certificat {
+    overflow: hidden;
+    height: 120px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-certificat img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+  }
+  
+  .card-certificat h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-certificat p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+  
+  .card-certificat .card-certificat-infos {
+    padding: 16px;
+  }
+  
+  .space-point {
+    height: 70px;
+    width: 50%;
+    border-right: 4px dotted rgb(174, 232, 255);
+  }
