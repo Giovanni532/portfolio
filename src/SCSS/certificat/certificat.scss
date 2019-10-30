@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     transition: .5s;
+    border-radius: 3px;
 }
 
 .card-certificat img {
@@ -106,71 +107,84 @@
 
     /* For a screen < 960px, this CSS will be read */
 
-    .card-competences {
-        margin: 20px 120px;
+    .title-certificat-php {
+        margin: 0 0px;
     }
 
-    .title-competence-data {
-        margin: 0 200px;
+    .title-certificat-js {
+        margin: 0 50px;
     }
 
-    .title-competence-framework {
-        margin: 0 150px;
+    .title-certificat-track {
+        margin: 0 50px;
     }
 
-    .title-competence-language {
-        margin: 0 150px;
+    .title-certificat-wagon {
+        margin: 0 50px;
     }
 
-    .title-competence-cli {
-        margin: 0 200px;
+    .title-certificat-react {
+        margin: 0 0px;
     }
+
+    .title-certificat-react-native {
+        margin: 0 0px;
+    }
+
 }
 
 @media (max-width: 720px) {
 
     /* For a screen < 720px, this CSS will be read */
-    .card-competences {
-        margin: 20px 60px;
+    .title-certificat-php {
+        margin: 0 50px;
     }
 
-    .title-competence-data {
-        margin: 0 200px;
+    .title-certificat-js {
+        margin: 0 0px;
     }
 
-    .title-competence-framework {
-        margin: 0 150px;
+    .title-certificat-track {
+        margin: 0 0px;
     }
 
-    .title-competence-language {
-        margin: 0 150px;
+    .title-certificat-wagon {
+        margin: 0 0px;
     }
 
-    .title-competence-cli {
-        margin: 0 200px;
+    .title-certificat-react {
+        margin: 0 20px;
+    }
+
+    .title-certificat-react-native {
+        margin: 0 30px;
     }
 }
 
 @media (max-width: 540px) {
 
     /* For a screen < 540px, this CSS will be read */
-    .card-competences {
-        margin: 20px 50px;
+    .title-certificat-php {
+        margin: 0 0px;
     }
 
-    .title-competence-data {
-        margin: 0 140px;
+    .title-certificat-js {
+        margin: 0 0px;
     }
 
-    .title-competence-framework {
-        margin: 0 100px;
+    .title-certificat-track {
+        margin: 0 0px;
     }
 
-    .title-competence-language {
-        margin: 0 110px;
+    .title-certificat-wagon {
+        margin: 0 0px;
     }
 
-    .title-competence-cli {
-        margin: 0 140px;
+    .title-certificat-react {
+        margin: 0 0px;
+    }
+
+    .title-certificat-react-native {
+        margin: 0 0px;
     }
 }
