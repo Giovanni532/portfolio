@@ -33,6 +33,7 @@
     background-color: rgb(174, 232, 255);
     color: rgb(0, 119, 255);
     border-radius: 3px;
+    text-align: center;
     padding: 5px;
 }
 
@@ -40,6 +41,7 @@
     background-color: rgb(174, 232, 255);
     color: rgb(0, 119, 255);
     border-radius: 3px;
+    text-align: center;
     padding: 5px;
 }
 
@@ -47,6 +49,15 @@
     background-color: rgb(174, 232, 255);
     color: rgb(0, 119, 255);
     border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.title-competence-cli {
+    background-color: rgb(174, 232, 255);
+    color: rgb(0, 119, 255);
+    border-radius: 3px;
+    text-align: center;
     padding: 5px;
 }
 
@@ -91,6 +102,7 @@
 }
 
 .heroku {
+    margin-top: -5px;
     margin-right: 5px;
     width: 30px;
     height: 30px;
@@ -99,6 +111,7 @@
 }
 
 .git {
+    margin-top: -3px;
     margin-right: 5px;
     width: 30px;
     height: 30px;
@@ -172,6 +185,11 @@
     color: #F783AC;
 }
 
+.fa-terminal {
+    margin-right: 8px;
+    margin-top: -3px;
+}
+
 @media (max-width: 960px) {
 
     /* For a screen < 960px, this CSS will be read */
@@ -179,17 +197,19 @@
     .card-competences {
         margin: 20px 120px;
     }
-
     .title-competence-data {
-        margin: 0 300px;
+        margin: 0 200px;
     }
 
     .title-competence-framework {
-        margin: 0 250px;
+        margin: 0 150px;
     }
 
     .title-competence-language {
-        margin: 0 250px;
+        margin: 0 150px;
+    }
+    .title-competence-cli {
+        margin: 0 200px;
     }
 }
 
@@ -211,6 +231,10 @@
     .title-competence-language {
         margin: 0 150px;
     }
+
+    .title-competence-cli {
+        margin: 0 200px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -221,14 +245,18 @@
     }
 
     .title-competence-data {
-        margin: 0 180px;
+        margin: 0 160px;
     }
 
     .title-competence-framework {
-        margin: 0 150px;
+        margin: 0 120px;
     }
 
     .title-competence-language {
-        margin: 0 150px;
+        margin: 0 130px;
+    }
+
+    .title-competence-cli {
+        margin: 0 160px;
     }
 }

@@ -40,7 +40,7 @@ const Competences = () => {
                             <Language />
                         </div>
                         <div className="col">
-                            <h2 className="title-competence-language">Cli</h2>
+                            <h2 className="title-competence-cli">Cli</h2>
                             <Cli />
                         </div>
                     </div>
