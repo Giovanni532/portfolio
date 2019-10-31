@@ -14,7 +14,7 @@ export default function ControlledCarousel() {
     return (
         <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
             <Carousel.Item>
-                <h3>Jeffrey APP</h3>
+                <h3 className="title-jeffrey">Jeffrey APP</h3>
                 <img
                     className="d-block w-100 image-project"
                     src={jeffrey}
