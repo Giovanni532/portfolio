@@ -37,7 +37,7 @@ const Data = () => {
 
     return (
         data.map(data =>
-            <div key={data.id} className="card-competences">
+            <div key={data.id} className="card-competences no-select">
                 <i className={iconeToDesgin(data.name)} id="data"></i>
                 <h2 className="name-competences">{data.name}</h2>
             </div>

@@ -101,7 +101,7 @@ const Carousel = () => {
                     {slideData.map(slide =>
                         <div key={slide.id}>
                             <h3 className={slide.classNameTitle + " no-select"}>{slide.title}</h3>
-                            <div class="card-category" style={{ backgroundImage: `url(${slide.img})` }} />
+                            <div className="card-category" style={{ backgroundImage: `url(${slide.img})` }} />
                         </div>
                     )}
                 </ItemsCarousel>

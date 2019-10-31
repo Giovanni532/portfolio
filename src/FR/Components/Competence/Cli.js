@@ -31,7 +31,7 @@ const Cli = () => {
 
     return (
         cli.map(cli =>
-            <div key={cli.id} className="card-competences">
+            <div key={cli.id} className="card-competences no-select">
                 <i className={nameToDesign(cli.name)} id="cli"></i>
                 <h2 className="name-competences">{cli.name}</h2>
             </div>

@@ -45,7 +45,7 @@ const Language = () => {
 
     return (
         language.map(language =>
-            <div key={language.id} className="card-competences">
+            <div key={language.id} className="card-competences no-select">
                 <i className={iconeToDesgin(language.icone, language.name)} id="language"></i>
                 <h2 className="name-competences">{language.name}</h2>
             </div>

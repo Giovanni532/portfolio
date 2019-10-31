@@ -30,19 +30,19 @@ const Competences = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="title-competence-data">Data</h2>
+                            <h2 className="title-competence-data no-select">Data</h2>
                             <Data />
                         </Col>
                         <Col>
-                            <h2 className="title-competence-framework">Framework</h2>
+                            <h2 className="title-competence-framework no-select">Framework</h2>
                             <FrameWork />
                         </Col>
                         <Col>
-                            <h2 className="title-competence-language">Language</h2>
+                            <h2 className="title-competence-language no-select">Language</h2>
                             <Language />
                         </Col>
                         <Col>
-                            <h2 className="title-competence-cli">Cli</h2>
+                            <h2 className="title-competence-cli no-select">Cli</h2>
                             <Cli />
                         </Col>
                     </Row>

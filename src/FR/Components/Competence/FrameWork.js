@@ -31,7 +31,7 @@ const FrameWork = () => {
 
     return (
         frameWork.map(frameWork =>
-            <div key={frameWork.id} className="card-competences">
+            <div key={frameWork.id} className="card-competences no-select">
                 <i className={iconeToDesgin(frameWork.icone, frameWork.name)} id="framework"></i>
                 <h2 className="name-competences">{frameWork.name}</h2>
             </div>
