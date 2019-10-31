@@ -19,8 +19,8 @@ const Projet = () => {
     return (
         <div>
             <div className="menu-competences">
-                <p onClick={() => handlingWebSite()} className={webSite ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Web</p>
-                <p onClick={() => handlingMobileApp()} className={mobileApp ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Mobile</p>
+                <p onClick={() => handlingWebSite()} className={webSite ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Site web</p>
+                <p onClick={() => handlingMobileApp()} className={mobileApp ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Application mobile</p>
             </div>
             {webSite === true ?
                 <Container>
