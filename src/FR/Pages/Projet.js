@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import ControlledCarousel from '../Components/Project/Project'
+import Carousel from '../Components/Project/Carousel'
 
 const Projet = () => {
     return (
         <Container>
-            <ControlledCarousel />
+            <Carousel/>
         </Container>
     )
 }
