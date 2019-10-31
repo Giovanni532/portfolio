@@ -3,46 +3,13 @@ import { Container, Form, Row, Col, Button } from 'react-bootstrap'
 
 const Contact = () => {
     const [email, setEmail] = React.useState('')
-    const [emailValid, setEmailValid] = React.useState(false)
     const [subject, setSubject] = React.useState('')
-    const [subjectValid, setSubjectValid] = React.useState(false)
     const [message, setMessage] = React.useState('')
-    const [messageValid, setMessageValid] = React.useState(false)
     const [succes, setSuccess] = React.useState(null)
     const [error, setError] = React.useState('')
 
-    const validateEmail = mail => {
-        const regexp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (regexp.test(mail)) {
-            return setEmailValid(true)
-        }
-        return setEmailValid(false)
-    }
-
-    const validateSubject = subject => {
-        if (subject.length < 10) {
-            return setSubjectValid(true)
-        }
-        return setSubjectValid(false)
-    }
-
-
-    const validateMessage = message => {
-        if (message.length < 20) {
-            return setMessageValid(true)
-        }
-        return setMessageValid(false)
-    }
-
     const handleSubmit = e => {
         e.preventDefault()
-        validateEmail(email)
-        validateMessage(message)
-        validateSubject(subject)
-
-        if (emailValid === false && subjectValid === false && messageValid === false) {
-            setError("Vous n'avez remplis aucun champs")
-        }
     }
 
     return (
