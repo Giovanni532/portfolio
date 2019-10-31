@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemsCarousel from 'react-items-carousel'
+import useWindowDimensions from './UseWindowDimensions'
 import jeffrey from '../../Assets/Project/jeffrey.png'
 import otactuWebApp from '../../Assets/Project/otactu-web-app.png'
 import easyColoc from '../../Assets/Project/easy-coloc.png'
@@ -63,26 +64,48 @@ const slideData = [
 const Carousel = () => {
     const [activeItemIndex, setActiveItemIndex] = React.useState(0);
     const chevronWidth = 40;
+    const { width } = useWindowDimensions()
     return (
-        <div>
-            <ItemsCarousel
-                requestToChangeActive={setActiveItemIndex}
-                activeItemIndex={activeItemIndex}
-                numberOfCards={2}
-                gutter={20}
-                leftChevron={<div className="button-project left-project no-select">{'<'}</div>}
-                rightChevron={<div className="button-project right-project no-select">{'>'}</div>}
-                outsideChevron
-                chevronWidth={chevronWidth}
-            >
-                {slideData.map(slide =>
-                    <div key={slide.id}>
-                        <h3 className={slide.classNameTitle + " no-select"}>{slide.title}</h3>
-                        <div class="card-category" style={{backgroundImage: `url(${slide.img})`}}/>
-                    </div>
-                )}
-            </ItemsCarousel>
-        </div>
+        width < 980 ?
+            <div>
+                <ItemsCarousel
+                    requestToChangeActive={setActiveItemIndex}
+                    activeItemIndex={activeItemIndex}
+                    numberOfCards={1}
+                    gutter={20}
+                    leftChevron={<div className="button-project left-project no-select">{'<'}</div>}
+                    rightChevron={<div className="button-project right-project no-select">{'>'}</div>}
+                    outsideChevron
+                    chevronWidth={chevronWidth}
+                >
+                    {slideData.map(slide =>
+                        <div key={slide.id}>
+                            <h3 className={slide.classNameTitle + " no-select"}>{slide.title}</h3>
+                            <div class="card-category" style={{ backgroundImage: `url(${slide.img})` }} />
+                        </div>
+                    )}
+                </ItemsCarousel>
+            </div>
+            :
+            <div>
+                <ItemsCarousel
+                    requestToChangeActive={setActiveItemIndex}
+                    activeItemIndex={activeItemIndex}
+                    numberOfCards={2}
+                    gutter={20}
+                    leftChevron={<div className="button-project left-project no-select">{'<'}</div>}
+                    rightChevron={<div className="button-project right-project no-select">{'>'}</div>}
+                    outsideChevron
+                    chevronWidth={chevronWidth}
+                >
+                    {slideData.map(slide =>
+                        <div key={slide.id}>
+                            <h3 className={slide.classNameTitle + " no-select"}>{slide.title}</h3>
+                            <div class="card-category" style={{ backgroundImage: `url(${slide.img})` }} />
+                        </div>
+                    )}
+                </ItemsCarousel>
+            </div>
     );
 };
 
