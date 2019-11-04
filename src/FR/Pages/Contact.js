@@ -32,8 +32,8 @@ const Contact = () => {
             {succes === false ?
                 <form onSubmit={e => handleSubmit(e)} className="contact">
                     <div>
-                            <input type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
-                            <input type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
+                        <input type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
+                        <input type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
                     </div>
                     <div>
                         <textarea as="textarea" rows="3" value={message} onChange={e => setMessage(e.target.value)} />

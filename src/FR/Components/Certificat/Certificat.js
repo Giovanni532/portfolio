@@ -63,7 +63,7 @@ const Certificat = () => {
                     <Col className="certificats">
                         {certificatArray.map(certificat =>
                             <div>
-                                <h2 className={certificat.className}>{certificat.name}</h2>
+                                <h2 className={certificat.className + " no-select"}>{certificat.name}</h2>
                                 <div className="space-point"></div>
                                 <div class="card-certificat">
                                     <img src={certificat.img} alt={certificat.name} />
