@@ -21,7 +21,7 @@ const ProjectMobile = () => {
     return (
         <Row>
             {slideData.map(slide =>
-                <Col key={slide.id}>
+                <Col key={slide.id} sm={12} md={6} lg={6}>
                     <div>
                         <h3 className={slide.classNameTitle + " no-select"}>{slide.title}</h3>
                         <div class="card-mobile" style={{ backgroundImage: `url(${slide.img})` }} />
