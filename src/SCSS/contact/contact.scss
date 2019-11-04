@@ -4,6 +4,13 @@
     color: rgb(0, 119, 255);
     border-radius: 3px;
     border: none;
-    outline: none;
     padding: 10px 15px 10px 15px;
+    &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
 }
