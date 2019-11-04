@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Form, Row, Col, Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 const Contact = () => {
     const [email, setEmail] = React.useState('')
@@ -30,23 +30,17 @@ const Contact = () => {
     return (
         <Container>
             {succes === false ?
-                <Form onSubmit={e => handleSubmit(e)}>
-                    <Row controlId="formBasicEmail">
-                        <Col>
-                            <Form.Control type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
-                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                        </Col>
-                        <Col>
-                            <Form.Control type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
-                        </Col>
-                    </Row>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Votre message</Form.Label>
-                        <Form.Control as="textarea" rows="3" value={message} onChange={e => setMessage(e.target.value)} />
-                    </Form.Group>
-                    <Button type="submit">Submit form</Button>
+                <form onSubmit={e => handleSubmit(e)} className="contact">
+                    <div>
+                            <input type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
+                            <input type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
+                    </div>
+                    <div>
+                        <textarea as="textarea" rows="3" value={message} onChange={e => setMessage(e.target.value)} />
+                    </div>
+                    <button type="submit" className="contact-submit">Submit form</button>
                     <p>{error}</p>
-                </Form>
+                </form>
                 :
                 <p>Ton message a bien ete envoye</p>
             }
