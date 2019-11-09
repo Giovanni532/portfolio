@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Form, Row, Col } from 'react-bootstrap'
 
 const Contact = () => {
     const [email, setEmail] = React.useState('')
@@ -28,23 +28,32 @@ const Contact = () => {
     }
 
     return (
-        <Container>
-            {succes === false ?
-                <form onSubmit={e => handleSubmit(e)} className="contact">
+        <div>
+            <Container>
+                <h2 className="title-contact">Contact</h2>
+                {succes === false ?
+                    <Form onSubmit={e => handleSubmit(e)} style={{textAlign: "center"}}>
+                        <Row controlId="formBasicEmail" style={{ paddingBottom: 20 }}>
+                            <Col>
+                                <Form.Control type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
+                            </Col>
+                            <Col>
+                                <Form.Control type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
+                            </Col>
+                        </Row>
+                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows="3" placeholder="Votre message ..." value={message} onChange={e => setMessage(e.target.value)} />
+                        </Form.Group>
+                        <button type="submit" className="contact-submit">Submit form</button>
+                        {error}
+                    </Form>
+                    :
                     <div>
-                        <input type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
-                        <input type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
+                        <p>Ton message a bien ete envoye</p>
                     </div>
-                    <div>
-                        <textarea as="textarea" rows="3" value={message} onChange={e => setMessage(e.target.value)} />
-                    </div>
-                    <button type="submit" className="contact-submit">Submit form</button>
-                    <p>{error}</p>
-                </form>
-                :
-                <p>Ton message a bien ete envoye</p>
-            }
-        </Container>
+                }
+            </Container>
+        </div>
     )
 }
 
