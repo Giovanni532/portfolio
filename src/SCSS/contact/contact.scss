@@ -1,5 +1,5 @@
 .title-contact {
-    margin: 20px 250px;
+    margin: 20px 350px;
     text-align: center;
     background-color: rgb(174, 232, 255);
     color: rgb(0, 119, 255);
@@ -21,5 +21,30 @@
     &:focus {
         outline: none !important;
         box-shadow: none;
+    }
+}
+
+@media (max-width: 980px) {
+
+    /* For a screen < 960px, this CSS will be read */
+    .title-contact {
+        margin: 20px 200px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    /* For a screen < 720px, this CSS will be read */
+    .title-contact {
+        margin: 20px 100px;
+    }
+}
+
+
+@media (max-width: 440px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .title-contact {
+        margin: 20px 50px;
     }
 }

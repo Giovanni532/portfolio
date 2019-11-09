@@ -33,7 +33,7 @@ const Contact = () => {
                 <h2 className="title-contact">Contact</h2>
                 {succes === false ?
                     <Form onSubmit={e => handleSubmit(e)} style={{textAlign: "center"}}>
-                        <Row controlId="formBasicEmail" style={{ paddingBottom: 20 }}>
+                        <Row style={{ paddingBottom: 20 }}>
                             <Col>
                                 <Form.Control type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
                             </Col>
@@ -41,7 +41,7 @@ const Contact = () => {
                                 <Form.Control type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
                             </Col>
                         </Row>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Group>
                             <Form.Control as="textarea" rows="3" placeholder="Votre message ..." value={message} onChange={e => setMessage(e.target.value)} />
                         </Form.Group>
                         <button type="submit" className="contact-submit">Submit form</button>
