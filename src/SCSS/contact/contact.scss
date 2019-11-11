@@ -7,6 +7,11 @@
     padding: 10px;
 }
 
+.contact {
+    width: 700px;
+    margin: 0 auto;
+}
+
 .contact-submit {
     text-align: center;
     background-color: rgb(174, 232, 255);
@@ -14,10 +19,12 @@
     border-radius: 3px;
     border: none;
     padding: 10px 15px 10px 15px;
+
     &:active {
         outline: none !important;
         box-shadow: none;
     }
+
     &:focus {
         outline: none !important;
         box-shadow: none;
@@ -30,6 +37,10 @@
     .title-contact {
         margin: 20px 200px;
     }
+
+    .contact {
+        width: 500px
+    }
 }
 
 @media (max-width: 720px) {
@@ -41,10 +52,26 @@
 }
 
 
+@media (max-width: 520px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .title-contact {
+        margin: 20px 90px;
+    }
+
+    .contact {
+        width: 400px
+    }
+}
+
 @media (max-width: 440px) {
 
     /* For a screen < 400px, this CSS will be read */
     .title-contact {
         margin: 20px 50px;
+    }
+
+    .contact {
+        width: 380px
     }
 }

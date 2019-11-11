@@ -32,7 +32,7 @@ const Contact = () => {
             <Container>
                 <h2 className="title-contact">Contact</h2>
                 {succes === false ?
-                    <Form onSubmit={e => handleSubmit(e)} style={{textAlign: "center"}}>
+                    <Form onSubmit={e => handleSubmit(e)} style={{ textAlign: "center" }} className="contact">
                         <Row style={{ paddingBottom: 20 }}>
                             <Col>
                                 <Form.Control type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
