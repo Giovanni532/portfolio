@@ -4,7 +4,6 @@ import './SCSS/index.scss'
 import RouterNavigations from './Router/RouterNavigation';
 
 function App() {
-
   return <RouterNavigations/>
 }
 

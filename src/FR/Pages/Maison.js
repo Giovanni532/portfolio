@@ -12,8 +12,6 @@ const Maison = () => {
                             <img src={profilImg} alt="Giovanni Salcuni Profil" className="img" />
                         </div>
                     </div>
-                </Col>
-                <Col>
                     <div className="profil">
                         <div>
                             <h1>Salut ! je suis Salcuni Giovanni </h1>

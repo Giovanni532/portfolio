@@ -2,6 +2,34 @@ import React from 'react'
 import { Container, Form, Row, Col } from 'react-bootstrap'
 
 const Contact = () => {
+    const [contacted, setContacted] = React.useState(false)
+
+    const closeContacted = () => {
+        setContacted(false)
+    }
+
+    return (
+        <Container>
+            {contacted ? <FormContact closeContacted={closeContacted} /> : null}
+            <Row style={{textAlign: 'center'}}>
+                <Col>
+                    <div onClick={() => setContacted(true)} className="contact-email">
+                        <i id="email" className="fas fa-envelope"></i>
+                        <p>Me contacter</p>
+                    </div>
+                </Col>
+                <Col>
+                    <div className="contact-linkedin">
+                        <i id="linkedin" className="fab fa-linkedin"></i>
+                        <p><a id="link-linkedin" href="https://www.linkedin.com/in/giovanni-salcuni/" target="_blank">Mon linkedin</a></p>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    )
+}
+
+const FormContact = ({ closeContacted }) => {
     const [email, setEmail] = React.useState('')
     const [subject, setSubject] = React.useState('')
     const [message, setMessage] = React.useState('')
@@ -31,6 +59,7 @@ const Contact = () => {
         <div>
             <Container>
                 <h2 className="title-contact">Contact</h2>
+                <div onClick={() => closeContacted()}>fermer</div>
                 {succes === false ?
                     <Form onSubmit={e => handleSubmit(e)} style={{ textAlign: "center" }} className="contact">
                         <Row style={{ paddingBottom: 20 }}>
