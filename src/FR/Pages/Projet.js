@@ -17,7 +17,7 @@ const Projet = () => {
         setMobileApp(true)
     }
     return (
-        <div>
+        <div style={{marginTop: 50}} id="projet">
             <div className="menu-competences">
                 <p onClick={() => handlingWebSite()} className={webSite ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Site web</p>
                 <p onClick={() => handlingMobileApp()} className={mobileApp ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Application mobile</p>

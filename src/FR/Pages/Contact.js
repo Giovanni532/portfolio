@@ -1,51 +1,30 @@
 import React from 'react'
 import { Container, Form, Row, Col } from 'react-bootstrap'
-import useWindowDimensions from '../../helper/UseWindowDimensions'
 
 const Contact = () => {
-    const [contacted, setContacted] = React.useState(false)
-    const { width } = useWindowDimensions();
+    const [contacted, setContacted] = React.useState(true)
 
     return (
-        <Container>
+        <Container id="contact">
             {contacted ? <FormContact /> : null}
             <Row style={{ textAlign: 'center' }}>
-                {width <= 750 ?
-                    contacted ?
-                    <Col>
-                        <div onClick={() => setContacted(false)} className="fade-in-bottom close-email">
+                <Col>
+                {contacted ?
+                    <div onClick={() => setContacted(false)} className="fade-in-bottom close-email">
                             <i id="close" className="fas fa-times"></i>
                             <p>Fermer le formulaire</p>
                         </div>
-                    </Col>
-                    :
-                    null
-                    :
-                    null
-                }
-                <Col>
-                    <div onClick={() => setContacted(true)} className={contacted ? "contact-email-3" : "contact-email"}>
+                        :
+                        <div onClick={() => setContacted(true)} className="contact-email">
                         <i id="email" className="fas fa-envelope"></i>
                         <p>Me contacter</p>
-                    </div>
-                </Col>
-                {width >= 750 ?
-                    contacted ?
-                    <Col>
-                        <div onClick={() => setContacted(false)} className="fade-in-bottom close-email">
-                            <i id="close" className="fas fa-times"></i>
-                            <p>Fermer le formulaire</p>
-                        </div>
-                    </Col>
-                    :
-                    null
-                    :
-                    null
+                    </div> 
                 }
+                </Col>
                 <Col>
-                    <div className={contacted ? "contact-linkedin-3" : "contact-linkedin"}>
+                    <div className="contact-linkedin">
                         <i id="linkedin" className="fab fa-linkedin"></i>
-                        <p><a id="link-linkedin" href="https://www.linkedin.com/in/giovanni-salcuni/" target="_blank">Mon linkedin</a></p>
+                        <p><a id="link-linkedin" href="https://www.linkedin.com/in/giovanni-salcuni/" target="_blank" rel="noopener noreferrer">Mon linkedin</a></p>
                     </div>
                 </Col>
             </Row>

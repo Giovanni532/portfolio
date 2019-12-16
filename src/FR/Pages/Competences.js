@@ -21,7 +21,7 @@ const Competences = () => {
     }
 
     return (
-        <div>
+        <div style={{marginTop: 50}} id="competences">
             <div className="menu-competences">
                 <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Competences</p>
                 <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Certificat</p>
