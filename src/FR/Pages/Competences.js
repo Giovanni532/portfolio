@@ -27,7 +27,7 @@ const Competences = () => {
                 <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
-                <Container>
+                <Container style={{textAlign: 'center'}}>
                     <Row>
                         <Col>
                             <h2 className="title-competence-data no-select">Data</h2>

@@ -30,3 +30,43 @@
         font-size: 24px;
     }
 }
+
+@media (max-width: 1200px) {
+    .title-profil {
+        margin: 0px 120px 0px 120px;
+    }
+}
+
+@media (max-width: 980px) {
+    .title-profil {
+        margin: 0px 120px 0px 120px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    /* For a screen < 720px, this CSS will be read */
+    .title-profil {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .title-profil {
+        margin: 0px 0px 0px 0px;
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .title-profil {
+        margin: 0px 0px 0px 0px;
+    }
+
+}
