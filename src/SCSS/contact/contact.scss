@@ -1,5 +1,5 @@
 .close-email {
-    margin: 50px 120px 50px 120px;
+    margin: 50px 50px 50px 50px;
     box-shadow: 0 0px 20px -2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px 0px 10px 0px;
@@ -20,8 +20,39 @@
     color: #F31431;
 }
 
+.contact-github {
+    margin: 50px 50px 50px 50px;
+    box-shadow: 0 0px 20px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 0px 10px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: #222222;
+        color: white;
+        #github {
+            color: white;
+        }
+        #link-github {
+            color: white;
+            text-decoration: white;
+        }
+    }
+}
+
+#github {
+    transition: 0.5s;
+    font-size: 22px;
+    color: #222222;
+}
+
+#link-github {
+    color: black;
+    text-decoration: black;
+}
+
 .contact-email {
-    margin: 50px 120px 50px 120px;
+    margin: 50px 50px 50px 50px;
     box-shadow: 0 0px 20px -2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px 0px 10px 0px;
@@ -43,7 +74,7 @@
 }
 
 .contact-linkedin {
-    margin: 50px 120px 50px 120px;
+    margin: 50px 50px 50px 50px;
     box-shadow: 0 0px 20px -2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px 0px 10px 0px;
@@ -110,15 +141,19 @@
 
     /* For a screen < 960px, this CSS will be read */
     .contact-email {
-        margin: 50px 70px 0px 70px;
+        margin: 50px 0px 50px 0px;
     }
 
     .contact-linkedin{
-        margin: 50px 70px 0px 70px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .contact-github {
+        margin: 50px 0px 50px 0px;
     }
 
     .close-email{
-        margin: 50px 70px 0px 70px;
+        margin: 50px 0px 50px 0px;
     }
 
     .title-contact {
@@ -138,6 +173,10 @@
     }
 
     .contact-linkedin{
+        margin: 50px 100px 50px 100px;
+    }
+
+    .contact-github {
         margin: 50px 100px 0px 100px;
     }
 
@@ -145,36 +184,18 @@
         margin: 50px 100px 0px 100px;
     }
 
-    .title-contact {
-        margin: 20px 100px;
-    }
+ 
 }
 
 @media (max-width: 760px) {
 
     /* For a screen < 720px, this CSS will be read */
-    .contact-email {
-        margin: 50px 100px 0px 100px;
-    }
-
-    .contact-email-3{
-        margin: 50px 100px 0px 100px;
-    }
-
-    .contact-linkedin{
-        margin: 50px 100px 0px 100px;
-    }
-
-    .contact-linkedin-3{
-        margin: 50px 100px 0px 100px;
-    }
-
-    .close-email{
-        margin: 50px 100px 0px 100px;
-    }
-
     .title-contact {
         margin: 20px 100px;
+    }
+
+    .contact {
+        width: 400px
     }
 }
 

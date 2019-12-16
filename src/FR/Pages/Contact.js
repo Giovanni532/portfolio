@@ -22,9 +22,15 @@ const Contact = () => {
                 }
                 </Col>
                 <Col>
+                    <div className="contact-github">
+                        <i id="github" className="fab fa-github"></i>
+                        <p><a id="link-github" href="https://github.com/Giovanni532" target="_blank" rel="noopener noreferrer">Mon Github</a></p>
+                    </div>
+                </Col>
+                <Col>
                     <div className="contact-linkedin">
                         <i id="linkedin" className="fab fa-linkedin"></i>
-                        <p><a id="link-linkedin" href="https://www.linkedin.com/in/giovanni-salcuni/" target="_blank" rel="noopener noreferrer">Mon linkedin</a></p>
+                        <p><a id="link-linkedin" href="https://www.linkedin.com/in/giovanni-salcuni/" target="_blank" rel="noopener noreferrer">Mon Linkedin</a></p>
                     </div>
                 </Col>
             </Row>
@@ -60,7 +66,7 @@ const FormContact = () => {
 
     return (
         <div className="fade-in-bottom">
-            <Container>
+            <Container style={{textAlign: 'center'}}>
                 <h2 className="title-contact">Contact</h2>
                 {succes === false ?
                     <Form onSubmit={e => handleSubmit(e)} style={{ textAlign: "center" }} className="contact">
