@@ -57,32 +57,30 @@ const Certificat = () => {
     const lengthCertificat = certificatArray.length
 
     return (
-        <div>
-            <Container>
-                <Row>
-                    <Col className="certificats">
-                        {certificatArray.map(certificat =>
-                            <div>
-                                <h2 className={certificat.className + " no-select"}>{certificat.name}</h2>
-                                <div className="space-point"></div>
-                                <div class="card-certificat">
-                                    <img src={certificat.img} alt={certificat.name} />
-                                    <div class="card-certificat-infos">
-                                        <h2 style={{ textAlign: 'left' }}>{certificat.title}</h2>
-                                        <p style={{ textAlign: 'left' }}>Compétences acquises : {certificat.skills}</p>
-                                    </div>
+        <Container style={{textAlign: 'center'}}>
+            <Row>
+                <Col className="certificats">
+                    {certificatArray.map(certificat =>
+                        <div key={certificat.id}>
+                            <h2 className={certificat.className + " no-select"}>{certificat.name}</h2>
+                            <div className="space-point"></div>
+                            <div className="card-certificat">
+                                <img src={certificat.img} alt={certificat.name} />
+                                <div className="card-certificat-infos">
+                                    <h2 style={{ textAlign: 'left' }}>{certificat.title}</h2>
+                                    <p style={{ textAlign: 'left' }}>Compétences acquises : {certificat.skills}</p>
                                 </div>
-                                {lengthCertificat === certificat.id ?
-                                    <div style={{ height: 50 }}></div>
-                                    :
-                                    <div className="space-point"></div>
-                                }
                             </div>
-                        )}
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+                            {lengthCertificat === certificat.id ?
+                                <div style={{ height: 50 }}></div>
+                                :
+                                <div className="space-point"></div>
+                            }
+                        </div>
+                    )}
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

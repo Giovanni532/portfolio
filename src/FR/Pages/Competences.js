@@ -21,13 +21,13 @@ const Competences = () => {
     }
 
     return (
-        <div style={{marginTop: 50}} id="competences">
+        <Container style={{marginTop: 50, textAlign: 'center'}} id="competences">
             <div className="menu-competences">
                 <p onClick={() => handlingCompetence()} className={competence ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Competences</p>
                 <p onClick={() => handlingCertificat()} className={certificat ? "link-menu-competences active-link no-select" : "link-menu-competences no-select"}>Certificat</p>
             </div>
             {competence === true || certificat === false ?
-                <Container style={{textAlign: 'center'}}>
+                <Container>
                     <Row>
                         <Col>
                             <h2 className="title-competence-data no-select">Data</h2>
@@ -50,7 +50,7 @@ const Competences = () => {
                 :
                 <Certificat />
             }
-        </div>
+        </Container>
     )
 }
 

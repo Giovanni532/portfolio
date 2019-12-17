@@ -65,19 +65,19 @@ const FormContact = () => {
     }
 
     return (
-        <div className="fade-in-bottom">
+        <Container className="fade-in-bottom">
             <Container style={{textAlign: 'center'}}>
                 <h2 className="title-contact">Contact</h2>
                 {succes === false ?
                     <Form onSubmit={e => handleSubmit(e)} style={{ textAlign: "center" }} className="contact">
-                        <Row style={{ paddingBottom: 20 }}>
+                        <Form.Row style={{ paddingBottom: 20 }}>
                             <Col>
                                 <Form.Control type="email" placeholder="Votre email" value={email} onChange={e => setEmail(e.target.value)} />
                             </Col>
                             <Col>
                                 <Form.Control type="text" placeholder="Le sujet" value={subject} onChange={e => setSubject(e.target.value)} />
                             </Col>
-                        </Row>
+                        </Form.Row>
                         <Form.Group>
                             <Form.Control as="textarea" rows="3" placeholder="Votre message ..." value={message} onChange={e => setMessage(e.target.value)} />
                         </Form.Group>
@@ -85,12 +85,12 @@ const FormContact = () => {
                         <p style={{ paddingTop: 10 }}>{error}</p>
                     </Form>
                     :
-                    <div>
+                    <div className="fade-in-bottom">
                         <p>Ton message a bien ete envoye</p>
                     </div>
                 }
             </Container>
-        </div>
+        </Container>
     )
 }
 

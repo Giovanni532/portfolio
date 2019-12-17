@@ -223,3 +223,21 @@
         width: 380px
     }
 }
+
+@media (max-width: 420px) {
+
+    /* For a screen < 400px, this CSS will be read */
+
+    .contact {
+        width: 300px
+    }
+}
+
+@media (max-width: 390px) {
+
+    /* For a screen < 400px, this CSS will be read */
+
+    .contact {
+        width: 250px;
+    }
+}
