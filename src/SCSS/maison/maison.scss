@@ -67,6 +67,21 @@
     /* For a screen < 400px, this CSS will be read */
     .title-profil {
         margin: 0px 0px 0px 0px;
+        font-size: 28px;
     }
 
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .title-profil {
+        margin: 0px 0px 0px 0px;
+        font-size: 24px;
+    }
 }

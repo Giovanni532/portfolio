@@ -252,8 +252,7 @@
     }
 }
 
-
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 
     /* For a screen < 400px, this CSS will be read */
     .card-competences {
@@ -261,15 +260,39 @@
     }
 
     .title-competence-data {
-        margin: 0 110px;
+        margin: 0 90px;
     }
 
     .title-competence-framework {
-        margin: 0 70px;
+        margin: 0 40px;
     }
 
     .title-competence-language {
-        margin: 0 80px;
+        margin: 0 50px;
+    }
+
+    .title-competence-cli {
+        margin: 0 110px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    /* For a screen < 400px, this CSS will be read */
+    .card-competences {
+        margin: 20px 50px;
+    }
+
+    .title-competence-data {
+        margin: 0 90px;
+    }
+
+    .title-competence-framework {
+        margin: 0 40px;
+    }
+
+    .title-competence-language {
+        margin: 0 50px;
     }
 
     .title-competence-cli {
